@@ -1,0 +1,30 @@
+name: Bug report
+description: Reporta un error
+title: "[BUG] Descripción concisa"
+labels: ["bug", "priority:medium"]
+assignees: []
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Detalla paso a paso
+      placeholder: "1. Ir a...\n2. Click en...\n3. Se observa..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado actual
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno (SO/Navegador/Versión)

@@ -1,0 +1,29 @@
+name: Feature request
+description: Propón una mejora o nueva funcionalidad
+title: "[FEAT] Descripción concisa"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema a resolver
+      description: ¿Qué necesidad cubre?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: ¿Cómo debería funcionar?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true
