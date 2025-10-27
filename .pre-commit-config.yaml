@@ -1,0 +1,13 @@
+repos:
+  # nbQA para ejecutar Black e isort sobre notebooks .ipynb
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.5
+    hooks:
+      - id: nbqa-black
+        name: nbQA - Black (notebooks)
+        # formateo consistente sin archivo de configuración externo
+        files: "^notebooks/.*\\.ipynb$"
+
+      - id: nbqa-isort
+        name: nbQA - isort (notebooks)
+        files: "^notebooks/.*\\.ipynb$"
