@@ -5,8 +5,11 @@ repos:
     hooks:
       - id: nbqa-black
         name: nbQA - Black (notebooks)
+        # formateo consistente sin archivo de configuración externo
         files: "^notebooks/.*\\.ipynb$"
 
       - id: nbqa-isort
         name: nbQA - isort (notebooks)
+        # usar perfil "black" directamente por argumentos
+        args: ["--profile=black"]
         files: "^notebooks/.*\\.ipynb$"
